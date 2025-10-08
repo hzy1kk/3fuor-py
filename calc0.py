@@ -12,8 +12,10 @@ print(f"A subtração é: {subtracao:.2f}")
 resultado = n1 * n2
 print(f"A multiplicação é: {resultado:.2f}")
 
-if n2 != 0:
-	resultado = n1 / n2
-	print(f"A divisão é: {resultado:.2f}")
+if(n2 == 0):
+    print("Divisão por zero não é permitida.")
 else:
-	print("Não é possível dividir por zero.")
+    resultado = n1 / n2
+    print(f"A divisão é: {resultado:.2f}")
+
+
